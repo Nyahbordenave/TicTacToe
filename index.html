@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe!</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+ <!-- Referencing BootStrap libraries that I am borrowing from-->
+ <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+        <div class="card" style="text-align: center">
+            <div class="card-body">
+                <h1 class="card-title"> Welcome to Tic-Tac-Toe! </h1>
+                <h2 class="card-text" id="ongoingPlayer"> Player One vs. Player Two</h2>
+            </div>
+        </div>
+            <!-- building my game grid with cells  -->
+            <div class="game-grid">
+                <div class="cell" onclick="turn(this)"> </div>
+                <div class="cell" onclick="turn(this)"> </div> 
+                <div class="cell" onclick="turn(this)"> </div>
+                <div class="cell" onclick="turn(this)"> </div> 
+                <div class="cell" onclick="turn(this)"> </div>
+                <div class="cell" onclick="turn(this)"> </div> 
+                <div class="cell" onclick="turn(this)"> </div> 
+                <div class="cell" onclick="turn(this)"> </div>
+                <div class="cell" onclick="turn(this)"> </div>
+            </div>
+            <!--  built a restart button once game is complete or ends in a draw  -->
+            <button type="button" class="btn btn-outline-success btn-lg mt-3" onclick="restartGame()">Restart Game</button>
+
+                <script src="index.js"></script>
+                <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+                
+</body>
+</html>
